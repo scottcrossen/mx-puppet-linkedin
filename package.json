@@ -1,0 +1,38 @@
+{
+  "name": "mx-puppet-linkedin",
+  "version": "0.0.0",
+  "author": "Scott Leland Crossen",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "tsc -p .",
+    "lint": "yarn eslint . --ext .ts,.tsx",
+    "prettier": "prettier  --single-quote --trailing-comma all --write .",
+    "start": "yarn build && node dist/index.js"
+  },
+  "dependencies": {
+    "command-line-args": "^5.1.1",
+    "command-line-usage": "^5.0.5",
+    "js-yaml": "^3.13.1",
+    "linkedin-voyager": "^0.0.19",
+    "matrix-bot-sdk": "^0.5.7",
+    "mx-puppet-bridge": "0.0.36",
+    "node-fetch": "^2.6.1",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "@types/command-line-args": "^5.0.0",
+    "@types/command-line-usage": "^5.0.1",
+    "@types/js-yaml": "^3.12.5",
+    "@types/lru-cache": "^5.1.0",
+    "@types/node": "^12.12.34",
+    "@types/node-fetch": "^2.5.7",
+    "@types/uuid": "^8.3.0",
+    "@typescript-eslint/eslint-plugin": "^4.1.1",
+    "@typescript-eslint/parser": "^4.1.1",
+    "eslint": "^7.9.0",
+    "express": "^4.17.1",
+    "prettier": "^2.1.2",
+    "tslint": "^5.20.1",
+    "typescript": "^3.8.3"
+  }
+}

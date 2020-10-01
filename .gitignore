@@ -1,0 +1,8 @@
+node_modules
+*-audit.json
+bridge.log.*
+./config.yaml
+linkedin-registration.yaml
+dist
+database.db
+yarn-error.log

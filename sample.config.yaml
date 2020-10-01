@@ -1,0 +1,26 @@
+bridge:
+  port: 8432
+  bindAddress: localhost
+  domain: matrix.org
+  homeserverUrl: https://matrix.org
+
+provisioning:
+  whitelist:
+    - "@.*:yourserver\\.com"
+  apiPrefix: /_matrix/provision
+
+database:
+  filename: database.db
+
+cookies:
+  directory: /data
+
+logging:
+  console: info
+  lineDateFormat: MMM-D HH:mm:ss.SSS
+  files:
+    - file: 'bridge.log'
+      level: info
+      datePattern: YYYY-MM-DD
+      maxFiles: 14d
+      maxSize: 50m
